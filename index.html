@@ -4,100 +4,186 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Consulting Firm — One Page</title>
+<title>Hesco Consulting Services Ltd</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-
-.slide{
-transition: transform .6s ease-in-out;
-}
-
-.serif{
-font-family:'Playfair Display',serif;
-}
-
+.slide{ transition: transform .6s ease-in-out; }
+.serif{ font-family:'Playfair Display',serif; }
 </style>
 </head>
 
 <body class="bg-[#061c2c] text-gray-200">
+<!-- ========================= HERO SECTION ========================= -->
+<section
+  class="hero-section min-h-screen flex items-center justify-center relative"
+  style="background-image:url('https://www.hescoconsultants.com/wp-content/uploads/2024/05/replicate-prediction-4zknz2sy4hrgj0cfb559pcw5z4-b.png'); background-size:cover; background-position:center;"
+>
 
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6 text-white" data-aos="fade-up">
+    
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">
+      Empowering Organizations Through Innovation
+    </h1>
+
+    <p class="text-lg md:text-xl mb-8">
+      HR, Finance, Procurement, ICT & Strategy Consultancy.
+    </p>
+
+    <a
+      href="#contact"
+      class="inline-block bg-blue-600 hover:bg-blue-700
+             text-white font-semibold
+             px-10 py-4 rounded-lg
+             shadow-lg transition"
+    >
+      Request Consultation
+    </a>
+
+  </div>
+</section>
+
+<!-- ========================= HERO STYLES & ANIMATION ========================= -->
+<style>
+.hero-section {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  animation: heroBgSlider 15s infinite ease-in-out;
+}
+
+@keyframes heroBgSlider {
+  0% {
+    background-image: url('https://www.hescoconsultants.com/wp-content/uploads/2024/05/replicate-prediction-4zknz2sy4hrgj0cfb559pcw5z4-b.png');
+  }
+  33% {
+    background-image: url('https://www.hescoconsultants.com/wp-content/uploads/2024/05/replicate-prediction-6pf6nq8cdsrgp0cfb56r591jf4.png');
+  }
+  66% {
+    background-image: url('https://www.hescoconsultants.com/wp-content/uploads/2024/05/replicate-prediction-bfntzaej09rgp0cfb55remr45c.png');
+  }
+  100% {
+    background-image: url('https://www.hescoconsultants.com/wp-content/uploads/2024/05/replicate-prediction-4zknz2sy4hrgj0cfb559pcw5z4-b.png');
+  }
+}
+</style>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({ once: true, duration: 800, easing: 'ease-in-out' });
+});
+</script>
 <!-- HERO / SLIDER -->
-
 <section class="flex flex-col items-center justify-center min-h-screen p-6">
 
 <div class="relative w-full max-w-5xl overflow-hidden rounded-lg shadow-xl">
 
 <div id="slider" class="flex slide">
 
+<!-- Slide 1: Strategic Goals -->
 <div class="min-w-full bg-white p-12 text-gray-800">
-<h1 class="text-4xl serif mb-3">Lorem Ipsum Dolor</h1>
-<h3 class="text-gray-500 mb-6">Placeholder Subtitle</h3>
+<h1 class="text-4xl serif mb-3">Strategic Goals</h1>
+<h3 class="text-gray-500 mb-6">Driving Growth Across Africa</h3>
+
+<ul class="text-gray-600 space-y-3">
+<li>• Build multi-sector partnerships across Africa</li>
+<li>• Support scalable growth frameworks for organizations</li>
+<li>• Drive enterprise digital and governance maturity</li>
+</ul>
+
+<p class="text-gray-600 mt-6">
+We are committed to enabling African organizations to scale efficiently through structured systems and strategic advisory.
+</p>
+</div>
+
+<!-- Slide 2: What We Do (from PDF) -->
+<div class="min-w-full bg-white p-12 text-gray-800">
+<h1 class="text-4xl serif mb-3">What We Do</h1>
+<h3 class="text-gray-500 mb-6">Management Consultancy & Systems Excellence</h3>
 
 <p class="text-gray-600 mb-6">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+We help organizations operate efficiently through advisory in management systems, energy, environment, health & safety, and business consultancy.
 </p>
 
 <p class="text-gray-600">
-Duis aute irure dolor in reprehenderit in voluptate velit esse.
+Our experts work closely with each organization to understand their needs and deliver tailored, high-impact solutions.
 </p>
-
 </div>
 
+<!-- Slide 3: Fields of Expertise -->
 <div class="min-w-full bg-white p-12 text-gray-800">
+<h1 class="text-4xl serif mb-3">Our Expertise</h1>
+<h3 class="text-gray-500 mb-6">Comprehensive Business Solutions</h3>
 
-<h1 class="text-4xl serif mb-3">Second Slide Title</h1>
-<h3 class="text-gray-500 mb-6">Another Subtitle</h3>
+<ul class="text-gray-600 space-y-3">
+<li>• Technical Advisory & Statutory Audits</li>
+<li>• Energy Management & Optimization</li>
+<li>• Environmental & Sustainability Services</li>
+<li>• ISO Management Systems & Certification</li>
+<li>• Training & Development Programs</li>
+<li>• Systems Automation & Real-time Monitoring</li>
+</ul>
+</div>
 
-<p class="text-gray-600 mb-6">
-Integer nec odio. Praesent libero.
+<!-- Slide 4: Why Hesco -->
+<div class="min-w-full bg-white p-12 text-gray-800">
+<h1 class="text-4xl serif mb-3">Why Choose Hesco</h1>
+<h3 class="text-gray-500 mb-6">Trusted. Certified. Results-Driven.</h3>
+
+<ul class="text-gray-600 space-y-3">
+<li>• Licensed by EPRA, NEMA & DOSHS</li>
+<li>• Tailored solutions for every organization</li>
+<li>• End-to-end consultancy & implementation</li>
+<li>• Real-time data systems & automation</li>
+<li>• Proven track record across industries</li>
+</ul>
+
+<p class="text-gray-600 mt-6">
+We don’t just advise — we implement, support, and ensure long-term success.
 </p>
-
-<p class="text-gray-600">
-Nulla quis sem at nibh elementum imperdiet.
-</p>
-
 </div>
 
 </div>
 
+<!-- DOTS (UPDATE TO 4 DOTS) -->
 <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-3">
-
 <button class="dot w-3 h-3 rounded-full bg-gray-600"></button>
 <button class="dot w-3 h-3 rounded-full bg-gray-300"></button>
-
-</div>
-
+<button class="dot w-3 h-3 rounded-full bg-gray-300"></button>
+<button class="dot w-3 h-3 rounded-full bg-gray-300"></button>
 </div>
 
 <!-- CONTACT CARD -->
-
 <div class="bg-white text-gray-800 rounded-xl shadow-xl w-full max-w-4xl mt-10 p-10">
 
-<h3 class="text-blue-700 font-semibold mb-4">Location Name</h3>
+<h3 class="text-blue-700 font-semibold mb-4">Nairobi Office</h3>
 
-<p class="mb-2">Lorem Street | City | Country</p>
+<p class="mb-2">Nextgen Mall, Mombasa Road, Nairobi</p>
 
-<p class="mb-1"><strong>Phone:</strong> +000 000 000 000</p>
+<p class="mb-1"><strong>Phone:</strong> 0728 601 184</p>
 
-<p class="mb-4"><strong>Email:</strong> example@email.com</p>
+<p class="mb-4"><strong>Email:</strong> info@hescoconsultants.com</p>
 
 <button class="bg-blue-700 text-white px-6 py-3 rounded-full">
-View our services ↗
+Get Consultation ↗
 </button>
 
 </div>
 
 </section>
 
-
 <!-- STATS -->
-
 <section class="bg-[#0b2a40] py-24 border-t border-b border-[#163a55]">
-
 <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
 
 <div>
@@ -111,17 +197,14 @@ View our services ↗
 </div>
 
 <div>
-<h3 class="text-5xl font-semibold text-blue-400">70%</h3>
-<p class="mt-3 text-gray-300">Regional Clients</p>
+<h3 class="text-5xl font-semibold text-blue-400">100+</h3>
+<p class="mt-3 text-gray-300">Corporate & SME Clients</p>
 </div>
 
 </div>
-
 </section>
 
-
 <!-- ABOUT -->
-
 <section class="bg-[#082338] py-8 text-center tracking-widest text-sm text-gray-400">
 ABOUT US
 </section>
@@ -135,10 +218,10 @@ class="w-full h-[420px] object-cover opacity-80">
 
 <div class="bg-white max-w-4xl w-full shadow-xl p-14 text-gray-800">
 
-<h2 class="serif text-4xl mb-6">Why Choose Us</h2>
+<h2 class="serif text-4xl mb-6">Why Choose Hesco</h2>
 
 <p class="text-gray-600 mb-6">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+We are a governance-driven consultancy firm focused on empowering African organizations through compliance, automation, and operational excellence. Our approach integrates systems thinking, strategic advisory, and hands-on implementation to deliver measurable results.
 </p>
 
 <a href="#" class="font-medium text-blue-700">Learn more →</a>
@@ -150,203 +233,240 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </section>
 
 <div class="h-40 bg-[#082338]"></div>
-
-
-<!-- SERVICES -->
-
-<section class="bg-[#061c2c] py-24">
-
+<section class="bg-[#082338] py-24">
 <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl serif mb-16">Our Services</h2>
+<h2 class="text-3xl serif mb-12">Our Strategic Goals</h2>
 
-<div class="grid md:grid-cols-2 gap-16">
-
-<div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden">
-
-<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-class="h-56 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-xl mb-2">Technical Advisory</h3>
-
-<p class="text-gray-400">
-HR audits, governance frameworks.
-</p>
+<ul class="space-y-6 text-gray-300">
+<li>• Build multi-sector partnerships across Africa</li>
+<li>• Support scalable growth frameworks for organizations</li>
+<li>• Drive enterprise digital and governance maturity</li>
+</ul>
 
 </div>
-
-</div>
-
-
-<div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden">
-
-<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
-class="h-56 w-full object-cover">
-
-<div class="p-8">
-
-<h3 class="text-xl mb-2">Energy Management</h3>
-
-<p class="text-gray-400">
-Efficiency & sustainability.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
+<!-- SERVICES -->
+<!-- ========================= SERVICES ========================= -->
+<section class="bg-[#061c2c] py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl serif mb-16">Our Corporate Pillars</h2>
+    <div class="grid md:grid-cols-2 gap-16">
 
-<!-- INSIGHTS -->
+      <!-- Compliance -->
+      <div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <img src="https://images.unsplash.com/photo-1581090469184-72b98c2d40f4?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-xl mb-4">Compliance Consultancy</h3>
+          <p class="text-gray-400 mb-4">
+            Ensuring organizations meet statutory, regulatory, and financial obligations.
+          </p>
+          <ul class="text-gray-400 space-y-2 text-sm mb-4">
+            <li>- Energy Audits</li>
+            <li>- Occupational Health & Safety Audits</li>
+            <li>- Environmental Compliance</li>
+            <li>- Fire Risk Audits</li>
+            <li>- Risk Assessment</li>
+          </ul>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
 
-<section class="bg-[#082338]">
+      <!-- Post Compliance -->
+      <div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <img src="https://images.unsplash.com/photo-1573164713880-1f0386f2c237?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-xl mb-4">Post-Compliance Support</h3>
+          <p class="text-gray-400 mb-4">
+            Reinforcing systems, people, and processes after compliance is achieved.
+          </p>
+          <ul class="text-gray-400 space-y-2 text-sm mb-4">
+            <li>- Closing Audit Gaps</li>
+            <li>- Corporate & Statutory Trainings</li>
+            <li>- Systems Automation (Real-time Metering)</li>
+          </ul>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
 
-<section class="max-w-7xl mx-auto px-6 pt-24">
+      <!-- Operational Excellence -->
+      <div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <img src="https://images.unsplash.com/photo-1600880292052-ec7c6757a5b4?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-xl mb-4">Operational Excellence</h3>
+          <p class="text-gray-400 mb-4">
+            Driving long-term efficiency, transformation, and strategic growth.
+          </p>
+          <ul class="text-gray-400 space-y-2 text-sm mb-4">
+            <li>- Strategic Planning</li>
+            <li>- ISO Management Systems</li>
+            <li>- ISO Certification Consultancy</li>
+            <li>- Process Improvement & Automation</li>
+            <li>- Performance Management</li>
+          </ul>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
 
-<h2 class="text-2xl serif mb-10">Our publication insights</h2>
+      <!-- Sustainability -->
+      <div class="bg-[#0b2a40] shadow-lg rounded-lg overflow-hidden flex flex-col">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover">
+        <div class="p-8 flex-1 flex flex-col">
+          <h3 class="text-xl mb-4">Sustainability Consulting</h3>
+          <p class="text-gray-400 mb-4">
+            Embedding ESG principles and climate-conscious practices into operations.
+          </p>
+          <ul class="text-gray-400 space-y-2 text-sm mb-4">
+            <li>- Carbon Audits</li>
+            <li>- Climate Change Consultancy</li>
+            <li>- ESG Reporting</li>
+          </ul>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
 
-<div class="grid md:grid-cols-3 gap-10">
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1523958203904-cdcb402031fd"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Publication title</h3>
-
-<p class="text-sm text-gray-400">
-Summary text.
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1589820296156-2454bb8a6ad1"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Publication title</h3>
-
-<p class="text-sm text-gray-400">
-Summary text.
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Publication title</h3>
-
-<p class="text-sm text-gray-400">
-Summary text.
-</p>
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
+<!-- ========================= INSIGHTS / KNOWLEDGE HUB ========================= -->
+<section class="bg-[#082338] py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-2xl serif mb-10">Insights & Knowledge Hub</h2>
+    <div class="grid md:grid-cols-3 gap-10">
 
+      <div class="bg-[#0b2a40] rounded-lg overflow-hidden shadow-lg flex flex-col">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-lg mb-2">Articles</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Thought leadership on governance, compliance, and business transformation.
+          </p>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-[#0b2a40] rounded-lg overflow-hidden shadow-lg flex flex-col">
+        <img src="https://images.unsplash.com/photo-1607082348834-8d0eea228d4d?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-lg mb-2">Industry Insights</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Expert analysis across energy, environment, and corporate sectors.
+          </p>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-[#0b2a40] rounded-lg overflow-hidden shadow-lg flex flex-col">
+        <img src="https://images.unsplash.com/photo-1581092795366-0a264c3cba7d?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-lg mb-2">Case Studies</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Real-world impact from our consultancy engagements.
+          </p>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-[#0b2a40] rounded-lg overflow-hidden shadow-lg flex flex-col">
+        <img src="https://images.unsplash.com/photo-1521790361450-37f63ab9c8f0?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover">
+        <div class="p-6 flex-1 flex flex-col">
+          <h3 class="text-lg mb-2">Compliance Updates</h3>
+          <p class="text-sm text-gray-400 mb-4">
+            Stay updated with EPRA, NEMA, and DOSHS regulatory changes.
+          </p>
+          <a href="#" class="mt-auto inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold text-center transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================= IMPACT ========================= -->
 <section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-2xl serif mb-10">Our Impact</h2>
+  <div class="grid md:grid-cols-3 gap-10 text-gray-400">
 
-<h2 class="text-2xl serif mb-10">Our latest blog insights</h2>
+    <div class="flex items-start gap-4">
+      <!-- Orange SVG Icon -->
+      <svg class="w-8 h-8 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M9 12h2v2H9v-2zM9 6h2v4H9V6z" />
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 1a9 9 0 110-18 9 9 0 010 18z" clip-rule="evenodd" />
+      </svg>
+      <div>
+        <h3 class="text-lg text-white">Compliance</h3>
+        <p class="text-sm">Helping businesses meet EPRA, NEMA & DOSHS standards.</p>
+      </div>
+    </div>
 
-<div class="grid md:grid-cols-3 gap-10">
+    <div class="flex items-start gap-4">
+      <svg class="w-8 h-8 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M3 10h14v2H3v-2z" />
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0 1a9 9 0 110-18 9 9 0 010 18z" clip-rule="evenodd" />
+      </svg>
+      <div>
+        <h3 class="text-lg text-white">Efficiency</h3>
+        <p class="text-sm">Reducing operational costs through optimization.</p>
+      </div>
+    </div>
 
-<div>
+    <div class="flex items-start gap-4">
+      <svg class="w-8 h-8 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 4l3 6H7l3-6zM10 16l-3-6h6l-3 6z" />
+      </svg>
+      <div>
+        <h3 class="text-lg text-white">Growth</h3>
+        <p class="text-sm">Supporting SMEs and corporates to scale sustainably.</p>
+      </div>
+    </div>
 
-<img src="https://images.unsplash.com/photo-1581091870627-3e09c1b9c5d4"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Blog title</h3>
-
-<p class="text-sm text-gray-400">
-Blog summary.
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Blog title</h3>
-
-<p class="text-sm text-gray-400">
-Blog summary.
-</p>
-
-</div>
-
-<div>
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
-class="h-44 w-full object-cover mb-4">
-
-<h3 class="text-lg">Blog title</h3>
-
-<p class="text-sm text-gray-400">
-Blog summary.
-</p>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
 </section>
-
 
 <script>
-
 const slider=document.getElementById("slider");
 const dots=document.querySelectorAll(".dot");
 let index=0;
 
 function updateSlider(){
-
 slider.style.transform=`translateX(-${index*100}%)`;
-
 dots.forEach(d=>d.classList.replace("bg-gray-600","bg-gray-300"));
-
 dots[index].classList.replace("bg-gray-300","bg-gray-600");
-
 }
 
 dots.forEach((dot,i)=>{
-
 dot.addEventListener("click",()=>{
-
 index=i;
 updateSlider();
-
 });
-
 });
 
 setInterval(()=>{
-
 index=(index+1)%dots.length;
 updateSlider();
-
 },5000);
 
 updateSlider();
-
 </script>
 
 </body>
-                                                          </html>
+  </html>
