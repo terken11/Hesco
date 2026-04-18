@@ -111,24 +111,67 @@ body{font-family:'DM Sans',sans-serif;background:#061c2c;color:#e5e7eb;overflow-
 .insight-link:hover{text-decoration:underline;}
 
 
+
+
+
   /* ── Case studies ── */
   .case-card {
-    background: #fff; border-radius: 14px; overflow: hidden;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.07);
+    background: #0b2a40; border-radius: 12px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,.05);
     display: flex; flex-direction: column;
-    transition: transform 0.25s;
+    transition: transform 0.25s, border-color 0.25s;
   }
-  .case-card:hover { transform: translateY(-5px); }
+  .case-card:hover { transform: translateY(-5px); border-color: rgba(249,115,22,.4); }
   .case-img { height: 200px; object-fit: cover; width: 100%; }
   .case-tag {
     font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--orange);
+    text-transform: uppercase; color: #fb923c;
   }
   .metric-block {
-    background: var(--warm-gray); border-radius: 10px; padding: 1rem;
+    background: rgba(255,255,255,.06); border-radius: 10px; padding: 1rem;
     text-align: center;
   }
-  .metric-num { font-size: 1.8rem; font-weight: 700; color: var(--orange); font-family: 'Playfair Display', serif; }
+  .metric-num { font-size: 1.8rem; font-weight: 700; color: #fb923c; font-family: 'Playfair Display', serif; }
+
+  /* ── Testimonials ── */
+  .testi-card {
+    background: #fff; border-radius: 14px; padding: 2rem;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+    position: relative;
+  }
+  .testi-card::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem; line-height: 1;
+    color: #fde8d4; position: absolute;
+    top: 0.5rem; left: 1.25rem;
+  }
+  .stars { color: #f59e0b; font-size: 0.9rem; letter-spacing: 0.05em; }
+
+  /* ── Pricing/booking steps ── */
+  .step-card {
+    background: #fff; border-radius: 14px; padding: 1.75rem;
+    text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    position: relative;
+  }
+  .step-num {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--orange); color: #fff;
+    font-weight: 700; font-size: 1.1rem;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+  }
+  .step-connector {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .step-connector {
+      display: block; position: absolute;
+      top: 40px; right: -30%; width: 60%;
+      border-top: 2px dashed #fde8d4; z-index: 0;
+    }
+  }
+
 
   /* ── Testimonials ── */
   .testi-card {
@@ -416,13 +459,13 @@ footer{background:#030e18;color:#e5e7eb;padding:4rem 1.5rem 2rem;}
   </div>
 </section>
 
-      <!-- ═══════════════════════════════════════════
+     <!-- ═══════════════════════════════════════════
      CASE STUDIES
 ═══════════════════════════════════════════ -->
-<section class="py-20 px-6 bg-white">
+<section class="py-20 px-6" style="background:#061c2c;">
 <div class="max-w-6xl mx-auto">
   <div class="section-label reveal">Proven Results</div>
-  <h2 class="serif text-3xl md:text-4xl font-bold mb-3 reveal">Case Studies</h2>
+  <h2 class="serif text-3xl md:text-4xl font-bold mb-3 reveal" style="color:#fff;">Case Studies</h2>
   <span class="orange-line reveal"></span>
 
   <div class="grid md:grid-cols-3 gap-8 mt-10">
@@ -432,12 +475,12 @@ footer{background:#030e18;color:#e5e7eb;padding:4rem 1.5rem 2rem;}
       <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=70" class="case-img" alt="Manufacturing plant">
       <div class="p-6 flex flex-col flex-1">
         <span class="case-tag mb-2">Manufacturing · Nairobi</span>
-        <h4 class="font-bold text-gray-900 mb-2">DOSHS Audit Turnaround — FMCG Plant</h4>
-        <p class="text-gray-500 text-sm mb-4 flex-1">A leading food manufacturer faced imminent DOSHS closure after 23 critical OHS violations. Hesco mobilized within 48 hours, gap-closed all violations, and trained 180 staff.</p>
+        <h4 class="font-bold mb-2" style="color:#fff;">DOSHS Audit Turnaround — FMCG Plant</h4>
+        <p class="text-sm mb-4 flex-1" style="color:#9ca3af;">A leading food manufacturer faced imminent DOSHS closure after 23 critical OHS violations. Hesco mobilized within 48 hours, gap-closed all violations, and trained 180 staff.</p>
         <div class="grid grid-cols-3 gap-2">
-          <div class="metric-block"><div class="metric-num">23</div><div class="text-xs text-gray-500">Violations Closed</div></div>
-          <div class="metric-block"><div class="metric-num">14</div><div class="text-xs text-gray-500">Days to Compliance</div></div>
-          <div class="metric-block"><div class="metric-num">180</div><div class="text-xs text-gray-500">Staff Trained</div></div>
+          <div class="metric-block"><div class="metric-num">23</div><div class="text-xs" style="color:#9ca3af;">Violations Closed</div></div>
+          <div class="metric-block"><div class="metric-num">14</div><div class="text-xs" style="color:#9ca3af;">Days to Compliance</div></div>
+          <div class="metric-block"><div class="metric-num">180</div><div class="text-xs" style="color:#9ca3af;">Staff Trained</div></div>
         </div>
       </div>
     </div>
@@ -447,12 +490,12 @@ footer{background:#030e18;color:#e5e7eb;padding:4rem 1.5rem 2rem;}
       <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=70" class="case-img" alt="Solar energy plant">
       <div class="p-6 flex flex-col flex-1">
         <span class="case-tag mb-2">Energy · Mombasa</span>
-        <h4 class="font-bold text-gray-900 mb-2">Energy Audit — Industrial Port Facility</h4>
-        <p class="text-gray-500 text-sm mb-4 flex-1">A port logistics company was facing rising energy costs. Our energy audit identified systemic inefficiencies and designed an energy management plan adopted company-wide.</p>
+        <h4 class="font-bold mb-2" style="color:#fff;">Energy Audit — Industrial Port Facility</h4>
+        <p class="text-sm mb-4 flex-1" style="color:#9ca3af;">A port logistics company was facing rising energy costs. Our energy audit identified systemic inefficiencies and designed an energy management plan adopted company-wide.</p>
         <div class="grid grid-cols-3 gap-2">
-          <div class="metric-block"><div class="metric-num">32%</div><div class="text-xs text-gray-500">Energy Saved</div></div>
-          <div class="metric-block"><div class="metric-num">KSh 4M</div><div class="text-xs text-gray-500">Annual Saving</div></div>
-          <div class="metric-block"><div class="metric-num">ERC ✓</div><div class="text-xs text-gray-500">Compliant</div></div>
+          <div class="metric-block"><div class="metric-num">32%</div><div class="text-xs" style="color:#9ca3af;">Energy Saved</div></div>
+          <div class="metric-block"><div class="metric-num">KSh 4M</div><div class="text-xs" style="color:#9ca3af;">Annual Saving</div></div>
+          <div class="metric-block"><div class="metric-num">ERC ✓</div><div class="text-xs" style="color:#9ca3af;">Compliant</div></div>
         </div>
       </div>
     </div>
@@ -462,12 +505,12 @@ footer{background:#030e18;color:#e5e7eb;padding:4rem 1.5rem 2rem;}
       <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=600&q=70" class="case-img" alt="Green environment">
       <div class="p-6 flex flex-col flex-1">
         <span class="case-tag mb-2">NGO · Multi-Country</span>
-        <h4 class="font-bold text-gray-900 mb-2">NEMA EIA & Environmental Audit — Infrastructure Project</h4>
-        <p class="text-gray-500 text-sm mb-4 flex-1">A regional development organization needed EIA clearance across 3 jurisdictions for a major road project. We handled NEMA, NEMC (Tanzania), and NEMA Uganda concurrently.</p>
+        <h4 class="font-bold mb-2" style="color:#fff;">NEMA EIA & Environmental Audit — Infrastructure Project</h4>
+        <p class="text-sm mb-4 flex-1" style="color:#9ca3af;">A regional development organization needed EIA clearance across 3 jurisdictions for a major road project. We handled NEMA, NEMC (Tanzania), and NEMA Uganda concurrently.</p>
         <div class="grid grid-cols-3 gap-2">
-          <div class="metric-block"><div class="metric-num">3</div><div class="text-xs text-gray-500">Countries</div></div>
-          <div class="metric-block"><div class="metric-num">90</div><div class="text-xs text-gray-500">Days to Approval</div></div>
-          <div class="metric-block"><div class="metric-num">0</div><div class="text-xs text-gray-500">Rejections</div></div>
+          <div class="metric-block"><div class="metric-num">3</div><div class="text-xs" style="color:#9ca3af;">Countries</div></div>
+          <div class="metric-block"><div class="metric-num">90</div><div class="text-xs" style="color:#9ca3af;">Days to Approval</div></div>
+          <div class="metric-block"><div class="metric-num">0</div><div class="text-xs" style="color:#9ca3af;">Rejections</div></div>
         </div>
       </div>
     </div>
